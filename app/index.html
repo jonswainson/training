@@ -1,6 +1,11 @@
 <!doctype html>
 <html class="no-js">
   <head>
+     <script type="text/javascript" src="http://localhost:48626/takana.js"></script>
+     <script type="text/javascript">
+       takanaClient.run({host: 'localhost:48626'});
+       console.log('takana started...')
+     </script>
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -22,26 +27,37 @@
     <!-- Add your site or application content here -->
     <div class="header">
       <div class="navbar navbar-default" role="navigation">
-        <div class="container">
+        <div class="bar">
           <div class="navbar-header">
 
-            <a class="navbar-brand" href="#/">Nabil training</a>
+          <div class="logo">
+             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x=" 0px" y="0px"
+              width="126.609px" height="53.927px" viewBox="0 0 126.609 53.927" enable-background="new 0 0 126.609 53.927"
+              xml:space="preserve">
+                  <text transform="matrix(1 0 0 1 -3 53.9272)" font-family="'Futura-CondensedExtraBold'" font-size="72">NAB</text>
+            </svg>   
           </div>
+                
+        </div>
 
           <div class="collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+              <li class="active"><a href="#/">Awesome</a></li>
+              <li><a ng-href="#/about">Super</a></li>
+              <li><a ng-href="#/">Great</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
+
     <div class="container">
     <div ng-view=""></div>
+
+
+    
     </div>
 
     <div class="footer">
